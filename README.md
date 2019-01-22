@@ -4,7 +4,7 @@ Simple flash project and toolchain check for AVR devleopment
 
 ## Getting Started
 
-Pull down, edit the ```PORT``` variable in the [Makefile](https://github.com/bglebrun/CENG447Lab0/blob/master/Makefile#L18), you can check this the lazy way with the Arduino IDE or look for the port in your devices in windows.
+Pull down, edit the ```PORT``` variable in the [Makefile](https://github.com/bglebrun/CENG447Lab0/blob/master/Makefile#L18), you can check this the lazy way with the Arduino IDE or look for the port in your devices in windows. I'd know how to do this if linux/osx was my daily driver but meh
 
 ### Prerequisistes
 * avr-dude
