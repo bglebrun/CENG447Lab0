@@ -4,7 +4,7 @@
 # clean: 						cleans object/hex files
 # test-connection:	calls avrdude to test connection
 
-#Name, just for templating reasons
+#Name for compilation
 PROJECT		?= blink
 
 #Objects to build
