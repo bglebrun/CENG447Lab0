@@ -12,7 +12,7 @@ OBJECTS		?= main.o
 
 #Microprocessor
 AVRMCU		?= atmega328p
-AVRCLOCK	?= 8000000
+AVRCLOCK	?= 16000000
 
 #Avr connection deets
 PORT				?= com5
