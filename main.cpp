@@ -2,9 +2,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-using namespace std;
-
-int main(void) {
+int main() {
   DDRB = 0xFF;
 
   while (true){

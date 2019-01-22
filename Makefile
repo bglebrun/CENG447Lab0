@@ -4,27 +4,27 @@
 # clean: 						cleans object/hex files
 # test-connection:	calls avrdude to test connection
 
-#Name for compilation
+# Name for compilation
 PROJECT		?= blink
 
-#Objects to build
+# Objects to build
 OBJECTS		?= main.o
 
-#Microprocessor
+# Microprocessor
 AVRMCU		?= atmega328p
 AVRCLOCK	?= 16000000
 
-#Avr connection deets
+# Avr connection deets
 PORT				?= com5
 PROGRAMMER	?= arduino
 
-#Avr toolchain
+# Avr toolchain
 AVRCPP		?= avr-gcc.exe
 AVROBJCPY ?= avr-objcopy.exe
 AVRSIZE		?= avr-size.exe
 AVRDUDE		?= avrdude.exe
 
-#build flags
+# build flags
 AVRCPPFLAGS ?= -mmcu=$(AVRMCU) -Wall -DF_CPU=$(AVRCLOCK) -I. -Os
 AVRLDFLAGS	?= -mmcu=$(AVRMCU)
 AVRDUDEOPT	?= -c $(PROGRAMMER) -p $(AVRMCU) -P $(PORT)
