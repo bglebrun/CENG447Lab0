@@ -15,7 +15,7 @@ AVRMCU		?= atmega328p
 AVRCLOCK	?= 8000000
 
 #Avr connection deets
-PORT 				?= com5
+PORT				?= com5
 PROGRAMMER	?= arduino
 
 #Avr toolchain
