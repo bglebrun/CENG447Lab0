@@ -19,14 +19,14 @@ PORT				?= com5
 PROGRAMMER	?= arduino
 
 #Avr toolchain
-AVRCPP 	?= avr-gcc.exe
+AVRCPP		?= avr-gcc.exe
 AVROBJCPY ?= avr-objcopy.exe
-AVRSIZE ?= avr-size.exe
-AVRDUDE ?= avrdude.exe
+AVRSIZE		?= avr-size.exe
+AVRDUDE		?= avrdude.exe
 
 #build flags
 AVRCPPFLAGS ?= -mmcu=$(AVRMCU) -Wall -DF_CPU=$(AVRCLOCK) -I. -Os
-AVRLDFLAGS ?= -mmcu=$(AVRMCU)
+AVRLDFLAGS	?= -mmcu=$(AVRMCU)
 AVRDUDEOPT	?= -c $(PROGRAMMER) -p $(AVRMCU) -P $(PORT)
 
 all: $(PROJECT).hex
